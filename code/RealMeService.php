@@ -497,7 +497,7 @@ class RealMeService extends Object
         if (substr($port, 0, 4) === 'env:') {
             $port = getenv(substr($port, 4));
 
-            if($port === false) {
+            if ($port === false) {
                 // getenv() didn't return a valid environment var, it's either mis-spelled or doesn't exist
                 $port = null;
             } else {
